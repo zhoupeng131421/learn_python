@@ -54,7 +54,7 @@ def main():
         sys.exit()
 
     match_doc(sys.argv[1])
-    table = out_document.add_table(rows = len(Dict) + 1, cols = 3, style = 'TableGrid')
+    table = out_document.add_table(rows = len(Dict) + 1, cols = 3, style = 'Table Grid')
     row_index = 0
     table.rows[row_index].cells[0].text = 'Requirement'
     table.rows[row_index].cells[1].text = 'Proof'

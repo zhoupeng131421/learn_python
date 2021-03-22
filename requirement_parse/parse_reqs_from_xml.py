@@ -62,7 +62,7 @@ def main():
 
     len_rows = len(ROWs)
     # style: 'Medium Grid 1 Accent 1' 'TableGrid' ...
-    table = document.add_table(rows = len_rows, cols = 3, style = 'TableGrid')
+    table = document.add_table(rows = len_rows, cols = 3, style = 'Table Grid')
     index_row = 0
     for row in ROWs:
         index_cell = 0
