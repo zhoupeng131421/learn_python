@@ -3,6 +3,7 @@
 import sys
 import xml.sax
 from docx import Document
+from docx.shared import Inches
 # maybe need to install the python-docx lib use command: pip3 install python-docx
 
 ROWs = []
@@ -60,8 +61,8 @@ def main():
     parse.parse(xml_path)
 
     len_rows = len(ROWs)
-    table = document.add_table(rows = len_rows, cols = 3)
-    table.style = 'TableGrid'
+    # style: 'Medium Grid 1 Accent 1' 'TableGrid' ...
+    table = document.add_table(rows = len_rows, cols = 3, style = 'TableGrid')
     index_row = 0
     for row in ROWs:
         index_cell = 0
